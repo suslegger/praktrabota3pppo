@@ -74,13 +74,21 @@ dotnet build .\src\ItSupport.Beginner.csproj
 
 ## Структура проекта
 
-Структура показана для ветки `beginner`. В ветке `solid` структура отличается
+Структура показана для ветки `solid`. В ветке `beginner` структура отличается
 
 ```
 ├── README.md                     # данный файл
-└── src/                   		  # вариант 1: один файл, вся логика внутри
-    ├── ItSupport.Beginner.csproj
-    └── Program.cs
+└── src/                          # вариант 2: слои и абстракции
+    ├── Domain/                   # модели: Ticket, Workstation, Fault, Location, Route
+    ├── Diagnostics/              # правила диагностики + служба диагностики
+    ├── Remediation/              # стратегии устранения и планировщик
+    ├── Routing/                  # построение маршрута
+    ├── Ai/                       # помощник для ответа сотруднику
+    ├── Data/                     # репозитории и источник телеметрии
+    ├── Application/              # сценарий обработки заявки
+    ├── Presentation/             # консольный интерфейс и меню
+    ├── Program.cs                # точка сборки (composition root)
+    └── ItSupport.Solid.csproj
 ```
 
 ## Ограничения прототипа
