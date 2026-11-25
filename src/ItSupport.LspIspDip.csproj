@@ -5,8 +5,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <RootNamespace>ItSupport.Beginner</RootNamespace>
-    <AssemblyName>ItSupport.Beginner</AssemblyName>
+    <RootNamespace>ItSupport.LspIspDip</RootNamespace>
+    <AssemblyName>ItSupport.LspIspDip</AssemblyName>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
